@@ -1,0 +1,16 @@
+
+
+					Time
+	——————————————————————————————————
+		- hour : int
+		- minute : int
+		- second : int
+		- calendar : Calendar
+	———————————————————————————————————
+		+ Time() : void
+	
+		+ getHour() : int
+		+ getMinute() : int
+		+ getSecond() : int
+		+ update() : void
+		+ toString() : String
