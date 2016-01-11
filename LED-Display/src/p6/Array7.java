@@ -29,6 +29,12 @@ public class Array7 {
 			a7[i] = inputArray[i];
 		}
 	}
+	
+	public Array7 (Array7 input){
+		for(int i = 0; i < 7; i++){
+			a7[i] = input.getElement(i);
+		}
+	}
 
 	/**
 	 * The element in the array gets the value of the variable value in the

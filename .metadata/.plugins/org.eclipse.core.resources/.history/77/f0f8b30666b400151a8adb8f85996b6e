@@ -1,0 +1,14 @@
+package p6;
+
+public class Test(){
+
+	
+// test getTenToTwelveMillions
+		 res = getTenToTwelveMillions( countries );
+		
+		 for( int i = 0; i < res.length; i++ ) {
+		 System.out.println( res[ i ].toString() );
+		 }
+}
+}
+}

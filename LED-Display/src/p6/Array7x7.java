@@ -1,5 +1,7 @@
 package p6;
 
+import org.omg.Messaging.SyncScopeHelper;
+
 /**
  * 
  * @author Johan & Erik
@@ -13,9 +15,9 @@ public class Array7x7 {
 	}
 
 	public Array7x7(int[][] inputMatrix) {
-		
+
 		a7x7 = new int[7][7];
-		
+
 		for (int i = 0; i < 7; i++) {
 			for (int j = 0; j < 7; j++) {
 				a7x7[i][j] = inputMatrix[i][j];
@@ -140,13 +142,26 @@ public class Array7x7 {
 
 		return res;
 	}
-	
+
 	/**
 	 * Returns the Matrix of the Array7x7
+	 * 
 	 * @return the matrix
+	 * @author Kristoffer Linderman and Pierre Lejdbring
 	 */
-	public int[][] getMatrix(){
+	public int[][] getMatrix() {
 		return a7x7;
+	}
+
+	public void print() {
+		for (int row[] : a7x7) {
+			for (int elem : row) {
+				System.out.print(elem + " ");
+			}
+			System.out.println();
+		}
+		System.out.println();
+
 	}
 
 }

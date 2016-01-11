@@ -1,0 +1,17 @@
+public class Collatz {
+  public static long conjecture(long input) {
+    long n = input;
+    long counter = 0;
+    
+    while(n != 1){
+      if(n%2 == 0){
+        n/=2;
+      } else if ( n%2 != 0){
+        n*=3;
+        n+=1;
+        }
+      counter++;
+    }
+    return counter;
+  }
+}

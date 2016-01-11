@@ -1,0 +1,800 @@
+INFO  2016-01-08 14:20:20,070 (Saros.java:220) Starting Saros 14.10.31 running:
+  Java Version: 1.8.0_66
+  Java Vendor: Oracle Corporation
+  Eclipse Runtime Version: 3.11.1.v20150903-1804
+  Operating System: Mac OS X (10.11.2)
+  Hardware Architecture: x86_64
+INFO  2016-01-08 14:20:20,101 (SarosContext.java:153) creating Saros runtime context...
+DEBUG 2016-01-08 14:20:20,151 (XMPPAccountStore.java:117) loading accounts from file: /Users/Kristoffer/.saros/config.dat
+DEBUG 2016-01-08 14:20:20,357 (XMPPAccountStore.java:176) loaded 1 account(s)
+INFO  2016-01-08 14:20:20,556 (SarosContext.java:199) successfully created Saros runtime context
+DEBUG 2016-01-08 14:20:20,584 (DataTransferManager.java:467) used transport order for the current XMPP connection: [XMPP-Socks5-Transport, XMPP-IBB-Transport]
+INFO  2016-01-08 14:20:20,768 (PreferenceInitializer.java:50) initializing preference default values
+DEBUG 2016-01-08 14:20:20,822 (SarosAnnotation.java:117) resetting annotation colors
+DEBUG 2016-01-08 14:20:20,901 (Saros.java:430) skipping conversion of old XMPP accounts, because there are already new ones
+DEBUG 2016-01-08 14:20:25,170 (SharedDocumentProvider.java:77) SharedDocumentProvider created by Eclipse
+DEBUG 2016-01-08 14:20:29,169 (WhiteboardManager.java:194) WhiteboardManager instantiated
+DEBUG 2016-01-08 14:20:29,232 (DocumentRecord.java:93) Added Node: attr(14522592292272747) name=svg
+DEBUG 2016-01-08 14:20:29,276 (XMPPConnectionService.java:439) started Socks5 proxy on port: 7777 [listening on all interfaces]
+DEBUG 2016-01-08 14:20:29,280 (XMPPConnectionService.java:459) using autodetected addresses: [192.168.0.2, fe80:0:0:0:902f:68ff:feef:c230%awdl0, fe80:0:0:0:3e15:c2ff:fec5:9cb4%en0]
+DEBUG 2016-01-08 14:20:29,287 (XMPPConnectionService.java:398)  new connection state == CONNECTING
+DEBUG 2016-01-08 14:20:30,462 (XMPPConnectionService.java:398) ellumination@saros-con.imp.fu-berlin.de/Saros new connection state == CONNECTED
+DEBUG 2016-01-08 14:20:30,462 (DataTransferManager.java:467) used transport order for the current XMPP connection: [XMPP-Socks5-Transport, XMPP-IBB-Transport]
+DEBUG 2016-01-08 14:20:30,465 (SkypeManager.java:289) Refreshing Skype username cache...
+WARN  2016-01-08 14:20:39,823 (StunServiceImpl.java:420) received no response from STUN server stunserver.org/69.172.201.208:3478 at local address /192.168.0.2:0
+DEBUG 2016-01-08 14:20:41,345 (DiscoveryManager.java:382) Inserted DiscoveryInfo into Cache for: pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:20:42,157 (VersionManager.java:90) received version request from pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:20:42,158 (VersionManager.java:160) send version response to pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+INFO  2016-01-08 14:20:42,284 (InvitationHandler.java:115) received invitation from pierreleidbring@saros-con.imp.fu-berlin.de/Saros [invitation id: -316499272102326387, session id: 1220143581, version: 14.10.31]
+DEBUG 2016-01-08 14:20:45,908 (IncomingSessionNegotiation.java:103) ISN [remote side: pierreleidbring@saros-con.imp.fu-berlin.de/Saros] : invitation accepted
+DEBUG 2016-01-08 14:20:45,911 (IncomingSessionNegotiation.java:188) ISN [remote side: pierreleidbring@saros-con.imp.fu-berlin.de/Saros] : sending invitation accepted confirmation
+DEBUG 2016-01-08 14:20:45,911 (IncomingSessionNegotiation.java:219) ISN [remote side: pierreleidbring@saros-con.imp.fu-berlin.de/Saros] : sending session negotiation data
+DEBUG 2016-01-08 14:20:45,912 (IncomingSessionNegotiation.java:232) ISN [remote side: pierreleidbring@saros-con.imp.fu-berlin.de/Saros] : waiting for host's session parameters
+DEBUG 2016-01-08 14:20:46,131 (IncomingSessionNegotiation.java:252) ISN [remote side: pierreleidbring@saros-con.imp.fu-berlin.de/Saros] : received host's session parameters
+DEBUG 2016-01-08 14:20:46,131 (IncomingSessionNegotiation.java:265) ISN [remote side: pierreleidbring@saros-con.imp.fu-berlin.de/Saros] : initializing session
+DEBUG 2016-01-08 14:20:46,132 (MUCNegotiationManager.java:143) Got hosts Communication Config: server conference.saros-con.imp.fu-berlin.de room SAROS_1220143581 pw -1177614172
+INFO  2016-01-08 14:20:46,171 (StatisticManager.java:184) Current feedback settings:
+  Feedback disabled: false
+  Feedback interval: 5
+  Statistic submission allowed: false
+  Pseudonym submission allowed: false
+INFO  2016-01-08 14:20:46,181 (ErrorLogManager.java:257) Current error log settings:
+  Error log submission allowed: false
+  Full Error log submission allowed: false
+INFO  2016-01-08 14:20:46,186 (SarosSessionManager.java:281) joined uninitialized Saros session
+INFO  2016-01-08 14:20:46,187 (DataTransferManager.java:409) establishing connection to pierreleidbring@saros-con.imp.fu-berlin.de/Saros from ellumination@saros-con.imp.fu-berlin.de/Saros using transport XMPP-Socks5-Transport
+DEBUG 2016-01-08 14:20:46,187 (ByteStreamTransport.java:45) establishing bytestream connection to pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:20:46,188 (Socks5Transport.java:493) [SOCKS5Transport] establishing connection to pierreleidbring@saros-con.imp.fu-berlin.de/Saroswith local SOCKS5 proxy running [port=7777, configured streamhosts=[192.168.0.2, fe80:0:0:0:902f:68ff:feef:c230%awdl0, fe80:0:0:0:3e15:c2ff:fec5:9cb4%en0]]...
+DEBUG 2016-01-08 14:20:47,164 (ByteStreamTransport.java:72) received request to establish a  bytestream connection to pierreleidbring@saros-con.imp.fu-berlin.de/Saros [de.fu_berlin.inf.dpp.net.internal.ByteStreamTransport$1@a4dc474]
+DEBUG 2016-01-08 14:20:47,164 (Socks5Transport.java:311) [SOCKS5Transport] receiving response connection from pierreleidbring@saros-con.imp.fu-berlin.de/Saroswith local SOCKS5 proxy running [port=7777, configured streamhosts=[192.168.0.2, fe80:0:0:0:902f:68ff:feef:c230%awdl0, fe80:0:0:0:3e15:c2ff:fec5:9cb4%en0]]
+WARN  2016-01-08 14:20:56,977 (Socks5Transport.java:544) [SOCKS5Transport] could not establish a connection to pierreleidbring@saros-con.imp.fu-berlin.de/Saros, remote side could not connect to any offered stream hosts: item-not-found(404) Could not establish socket with any provided host
+DEBUG 2016-01-08 14:20:56,978 (Socks5Transport.java:567) [SOCKS5Transport] waiting for pierreleidbring@saros-con.imp.fu-berlin.de/Saros to establish a connection...
+ERROR 2016-01-08 14:21:00,509 (ByteStreamTransport.java:105) could not establish bytestream connection to pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+Could not establish socket with any provided host: item-not-found(404) Could not establish socket with any provided host
+	at org.jivesoftware.smackx.bytestreams.socks5.Socks5BytestreamRequest.cancelRequest(Socks5BytestreamRequest.java:277)
+	at org.jivesoftware.smackx.bytestreams.socks5.Socks5BytestreamRequest.accept(Socks5BytestreamRequest.java:247)
+	at org.jivesoftware.smackx.bytestreams.socks5.Socks5BytestreamRequest.accept(Socks5BytestreamRequest.java:34)
+	at de.fu_berlin.inf.dpp.net.internal.Socks5Transport.handleResponse(Socks5Transport.java:315)
+	at de.fu_berlin.inf.dpp.net.internal.Socks5Transport.acceptRequest(Socks5Transport.java:471)
+	at de.fu_berlin.inf.dpp.net.internal.ByteStreamTransport$1.incomingBytestreamRequest(ByteStreamTransport.java:77)
+	at org.jivesoftware.smackx.bytestreams.socks5.InitiationListener.processRequest(InitiationListener.java:91)
+	at org.jivesoftware.smackx.bytestreams.socks5.InitiationListener.access$000(InitiationListener.java:37)
+	at org.jivesoftware.smackx.bytestreams.socks5.InitiationListener$1.run(InitiationListener.java:63)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+WARN  2016-01-08 14:21:26,980 (DataTransferManager.java:415) failed to connect to pierreleidbring@saros-con.imp.fu-berlin.de/Saros using transport: XMPP-Socks5-Transport
+java.io.IOException: [SOCKS5Transport] waiting for a response session timed out (30000ms) and could not establish a connection from this side, too:
+	at de.fu_berlin.inf.dpp.net.internal.Socks5Transport.establishBinaryChannel(Socks5Transport.java:592)
+	at de.fu_berlin.inf.dpp.net.internal.ByteStreamTransport.connect(ByteStreamTransport.java:48)
+	at de.fu_berlin.inf.dpp.net.internal.DataTransferManager.connectInternal(DataTransferManager.java:412)
+	at de.fu_berlin.inf.dpp.net.internal.DataTransferManager.connect(DataTransferManager.java:297)
+	at de.fu_berlin.inf.dpp.negotiation.IncomingSessionNegotiation.accept(IncomingSessionNegotiation.java:167)
+	at de.fu_berlin.inf.dpp.ui.wizards.JoinSessionWizard$2.run(JoinSessionWizard.java:128)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+Caused by: item-not-found(404) Could not establish socket with any provided host
+	at org.jivesoftware.smack.util.SyncPacketSend.getReply(SyncPacketSend.java:54)
+	at org.jivesoftware.smackx.bytestreams.socks5.Socks5BytestreamManager.establishSession(Socks5BytestreamManager.java:481)
+	at org.jivesoftware.smackx.bytestreams.socks5.Socks5BytestreamManager.establishSession(Socks5BytestreamManager.java:83)
+	at de.fu_berlin.inf.dpp.net.internal.Socks5Transport.establishBinaryChannel(Socks5Transport.java:512)
+	... 6 more
+INFO  2016-01-08 14:21:26,982 (DataTransferManager.java:409) establishing connection to pierreleidbring@saros-con.imp.fu-berlin.de/Saros from ellumination@saros-con.imp.fu-berlin.de/Saros using transport XMPP-IBB-Transport
+DEBUG 2016-01-08 14:21:26,983 (ByteStreamTransport.java:45) establishing bytestream connection to pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:21:27,128 (DataTransferManager.java:136) bytestream connection changed [mode=IBB, id=saros-main-session] pierreleidbring@saros-con.imp.fu-berlin.de/Saros, inc=false, pool id=saros-main-session:out:pierreleidbring@saros-con.imp.fu-berlin.de/Saros]
+DEBUG 2016-01-08 14:21:27,129 (IncomingSessionNegotiation.java:304) ISN [remote side: pierreleidbring@saros-con.imp.fu-berlin.de/Saros] : starting session
+DEBUG 2016-01-08 14:21:27,129 (BinaryChannelConnection.java:103) [mode=IBB, id=saros-main-session] pierreleidbring@saros-con.imp.fu-berlin.de/Saros ReceiverThread started.
+INFO  2016-01-08 14:21:27,148 (StatisticManager.java:163) Session count: 2
+INFO  2016-01-08 14:21:27,149 (ParticipantCollector.java:134) Session started: Current number of participants: 2
+DEBUG 2016-01-08 14:21:27,150 (MultiUserChatService.java:100) Joining MUC...
+DEBUG 2016-01-08 14:21:27,151 (ActivityHandler.java:89) activity dispatcher started
+DEBUG 2016-01-08 14:21:27,152 (XStreamExtensionProvider.java:149) Registering new converter of class de.fu_berlin.inf.dpp.misc.xstream.SPathConverter
+DEBUG 2016-01-08 14:21:27,152 (XStreamExtensionProvider.java:194) Registering new converter of class de.fu_berlin.inf.dpp.misc.xstream.UserConverter
+DEBUG 2016-01-08 14:21:27,156 (MultiUserChat.java:264) Trying to create room on server conference.saros-con.imp.fu-berlin.de
+DEBUG 2016-01-08 14:21:27,159 (WhiteboardManager.java:108) Preparing Whiteboard for receiving an invitation
+DEBUG 2016-01-08 14:21:27,169 (ColorUtils.java:21) set foregroundcolor RGB {137, 180, 178}
+DEBUG 2016-01-08 14:21:27,177 (ConsistencyAction.java:173) Inconsistency indicator goes: off
+DEBUG 2016-01-08 14:21:27,178 (IncomingSessionNegotiation.java:318) ISN [remote side: pierreleidbring@saros-con.imp.fu-berlin.de/Saros] : invitation has completed successfully
+WARN  2016-01-08 14:21:27,209 (SubscriptionHandler.java:148) received error presence package from saros_1220143581@conference.saros-con.imp.fu-berlin.de/ellumination@saros-con.imp.fu-berlin.de/Saros, condition: not-authorized, message: A password is required to enter this room
+DEBUG 2016-01-08 14:21:27,340 (MultiUserChat.java:297) MUC joined. Server: conference.saros-con.imp.fu-berlin.de Room: SAROS_1220143581 Password -1177614172
+DEBUG 2016-01-08 14:21:27,465 (MultiUserChat.java:133) processPacket called
+DEBUG 2016-01-08 14:21:27,466 (MultiUserChatStateManager.java:101) Incoming Message from saros_1220143581@conference.saros-con.imp.fu-berlin.de/ellumination@saros-con.imp.fu-berlin.de/Saros with state: active
+DEBUG 2016-01-08 14:21:27,467 (MultiUserChat.java:79) stateChanged fired with state: active
+DEBUG 2016-01-08 14:21:27,558 (IncomingSessionNegotiation.java:331) ISN [remote side: pierreleidbring@saros-con.imp.fu-berlin.de/Saros] : invitation complete confirmation sent
+DEBUG 2016-01-08 14:21:27,846 (UserInformationHandler.java:293) received user list from pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:21:27,847 (UserInformationHandler.java:317) updating permissions for user: pierreleidbring@saros-con.imp.fu-berlin.de/Saros [WRITE_ACCESS]
+DEBUG 2016-01-08 14:21:27,848 (UserInformationHandler.java:317) updating permissions for user: ellumination@saros-con.imp.fu-berlin.de/Saros [WRITE_ACCESS]
+DEBUG 2016-01-08 14:21:27,848 (UserInformationHandler.java:347) sending user list received confirmation to pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:21:28,537 (CancelableProcess.java:353) process ISN [remote side: pierreleidbring@saros-con.imp.fu-berlin.de/Saros] exit status: OK
+DEBUG 2016-01-08 14:21:28,746 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:21:28,904 (ChangeColorManager.java:238) received color id change fo user : pierreleidbring@saros-con.imp.fu-berlin.de/Saros [2]
+DEBUG 2016-01-08 14:21:28,905 (ChangeColorManager.java:634) updating color id set: [pierreleidbring@saros-con.imp.fu-berlin.de, ellumination@saros-con.imp.fu-berlin.de]
+DEBUG 2016-01-08 14:21:28,993 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:21:28,994 (ChangeColorManager.java:238) received color id change fo user : ellumination@saros-con.imp.fu-berlin.de/Saros [4]
+DEBUG 2016-01-08 14:21:28,995 (ChangeColorManager.java:634) updating color id set: [pierreleidbring@saros-con.imp.fu-berlin.de, ellumination@saros-con.imp.fu-berlin.de]
+DEBUG 2016-01-08 14:21:29,121 (ByteStreamTransport.java:72) received request to establish a  bytestream connection to pierreleidbring@saros-con.imp.fu-berlin.de/Saros [de.fu_berlin.inf.dpp.net.internal.ByteStreamTransport$1@a4dc474]
+DEBUG 2016-01-08 14:21:29,121 (Socks5Transport.java:368) [SOCKS5Transport] receiving request from pierreleidbring@saros-con.imp.fu-berlin.de/Saroswith local SOCKS5 proxy running [port=7777, configured streamhosts=[192.168.0.2, fe80:0:0:0:902f:68ff:feef:c230%awdl0, fe80:0:0:0:3e15:c2ff:fec5:9cb4%en0]]
+DEBUG 2016-01-08 14:21:29,122 (Socks5Transport.java:624) [SOCKS5Transport] Start to establish new response connection
+WARN  2016-01-08 14:21:42,465 (Socks5Transport.java:411) [SOCKS5Transport] Couldn't accept request but still trying to establish a response connection: Could not establish socket with any provided host
+ERROR 2016-01-08 14:21:42,467 (Socks5Transport.java:440) An error occurred while establishing a response connection 
+item-not-found(404) Could not establish socket with any provided host
+	at org.jivesoftware.smack.util.SyncPacketSend.getReply(SyncPacketSend.java:54)
+	at org.jivesoftware.smackx.bytestreams.socks5.Socks5BytestreamManager.establishSession(Socks5BytestreamManager.java:481)
+	at org.jivesoftware.smackx.bytestreams.socks5.Socks5BytestreamManager.establishSession(Socks5BytestreamManager.java:83)
+	at de.fu_berlin.inf.dpp.net.internal.Socks5Transport.establishResponseSession(Socks5Transport.java:631)
+	at de.fu_berlin.inf.dpp.net.internal.Socks5Transport$1.call(Socks5Transport.java:108)
+	at de.fu_berlin.inf.dpp.net.internal.Socks5Transport$1.call(Socks5Transport.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+ERROR 2016-01-08 14:21:42,468 (ByteStreamTransport.java:105) could not establish bytestream connection to pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+java.io.IOException: [SOCKS5Transport] Neither connection could be established. 
+	at de.fu_berlin.inf.dpp.net.internal.Socks5Transport.acceptNewRequest(Socks5Transport.java:446)
+	at de.fu_berlin.inf.dpp.net.internal.Socks5Transport.acceptRequest(Socks5Transport.java:474)
+	at de.fu_berlin.inf.dpp.net.internal.ByteStreamTransport$1.incomingBytestreamRequest(ByteStreamTransport.java:77)
+	at org.jivesoftware.smackx.bytestreams.socks5.InitiationListener.processRequest(InitiationListener.java:91)
+	at org.jivesoftware.smackx.bytestreams.socks5.InitiationListener.access$000(InitiationListener.java:37)
+	at org.jivesoftware.smackx.bytestreams.socks5.InitiationListener$1.run(InitiationListener.java:63)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+DEBUG 2016-01-08 14:22:12,582 (ByteStreamTransport.java:72) received request to establish a  bytestream connection to pierreleidbring@saros-con.imp.fu-berlin.de/Saros [de.fu_berlin.inf.dpp.net.internal.ByteStreamTransport$1@62c94302]
+DEBUG 2016-01-08 14:22:12,582 (DataTransferManager.java:136) bytestream connection changed [mode=IBB, id=default] pierreleidbring@saros-con.imp.fu-berlin.de/Saros, inc=true, pool id=default:in:pierreleidbring@saros-con.imp.fu-berlin.de/Saros]
+DEBUG 2016-01-08 14:22:12,583 (BinaryChannelConnection.java:103) [mode=IBB, id=default] pierreleidbring@saros-con.imp.fu-berlin.de/Saros ReceiverThread started.
+DEBUG 2016-01-08 14:22:13,030 (SXEIncomingSynchronizationProcess.java:65) SXE(3343) invitation from pierreleidbring@saros-con.imp.fu-berlin.de/Saros received
+DEBUG 2016-01-08 14:22:13,031 (SXEController.java:537) Whiteboard state changed from INIT to CONNECTING
+DEBUG 2016-01-08 14:22:13,031 (SXEIncomingSynchronizationProcess.java:87) SXE(3343) queue incoming records from now
+DEBUG 2016-01-08 14:22:13,032 (SarosSXETransmitter.java:151) SXE send accept-state to pierreleidbring@saros-con.imp.fu-berlin.de/Saros waiting for [state]
+DEBUG 2016-01-08 14:22:13,490 (SXEIncomingSynchronizationProcess.java:99) SXE(3343) state received
+DEBUG 2016-01-08 14:22:13,491 (SXEController.java:137) SXE (3343): receive state and start session at invitee side
+DEBUG 2016-01-08 14:22:13,492 (DocumentRecord.java:93) Added Node: attr(145225912349161956) name=svg
+INFO  2016-01-08 14:22:13,835 (InvitationHandler.java:179) received project negotiation from pierreleidbring@saros-con.imp.fu-berlin.de/Saros with session id: 1220143581 and negotiation id: 3612271904711807993
+INFO  2016-01-08 14:22:13,840 (ProjectNegotiationObservable.java:51) This is ProjectNegotiation number 1 in this session. There are 0 process(es) in this session
+DEBUG 2016-01-08 14:26:35,289 (EditorAPI.java:259) editor part needs to be restored: LedCharacters.java
+DEBUG 2016-01-08 14:26:36,354 (IncomingProjectNegotiation.java:388) compute required files for project de.fu_berlin.inf.dpp.filesystem.EclipseProjectImpl@750a1351 - P/LED-Display with ID: 2066469494
+DEBUG 2016-01-08 14:26:36,360 (IncomingProjectNegotiation.java:612) IPN [remote side: pierreleidbring@saros-con.imp.fu-berlin.de/Saros] : computing file list difference
+DEBUG 2016-01-08 14:26:36,361 (IncomingProjectNegotiation.java:583) IPN [remote side: pierreleidbring@saros-con.imp.fu-berlin.de/Saros] : 0 file(s) must be synchronized
+DEBUG 2016-01-08 14:26:36,818 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:26:37,380 (EditorManager.java:1697) locking all editors
+DEBUG 2016-01-08 14:26:37,381 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:26:37,917 (SarosProjectMapper.java:179) added project de.fu_berlin.inf.dpp.filesystem.EclipseProjectImpl@750a1351 - P/LED-Display with ID 2066469494 [completely shared:false]
+DEBUG 2016-01-08 14:26:38,260 (SarosProjectMapper.java:165) upgraded partially shared project de.fu_berlin.inf.dpp.filesystem.EclipseProjectImpl@750a1351 - P/LED-Display with ID 2066469494 to a completely shared project
+DEBUG 2016-01-08 14:26:38,262 (SharedProjectDecorator.java:99) updating project decoration for all shared projects
+DEBUG 2016-01-08 14:26:38,265 (CancelableProcess.java:353) process IPN [remote side: pierreleidbring@saros-con.imp.fu-berlin.de/Saros] exit status: OK
+DEBUG 2016-01-08 14:26:38,409 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:26:38,447 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:26:38,705 (ActivitySequencer.java:496) send (009) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+INFO  2016-01-08 14:26:38,764 (SarosSession.java:482) user pierreleidbring@saros-con.imp.fu-berlin.de/Saros now has Projects and can process IResourceActivities
+DEBUG 2016-01-08 14:26:38,884 (EditorListener.java:236) Viewport changed: 0+1
+DEBUG 2016-01-08 14:26:38,925 (EditorListener.java:236) Viewport changed: 0+73
+DEBUG 2016-01-08 14:26:38,927 (EditorListener.java:236) Viewport changed: 0+1
+DEBUG 2016-01-08 14:26:38,969 (ActivitySequencer.java:496) send (002) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:26:39,018 (EditorListener.java:236) Viewport changed: 0+60
+DEBUG 2016-01-08 14:26:39,028 (EditorListener.java:236) Viewport changed: 0+66
+DEBUG 2016-01-08 14:26:39,030 (EditorListener.java:236) Viewport changed: 0+60
+DEBUG 2016-01-08 14:26:39,225 (EditorManager.java:1697) unlocking all editors
+DEBUG 2016-01-08 14:26:39,246 (ActivitySequencer.java:496) send (002) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:26:39,448 (ActivitySequencer.java:546) rcvd (005) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:26:39,449 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:26:39,503 (ActivitySequencer.java:496) send (005) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:26:41,175 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:26:41,181 (EditorListener.java:236) Viewport changed: 0+79
+DEBUG 2016-01-08 14:26:41,182 (EditorListener.java:236) Viewport changed: 0+73
+DEBUG 2016-01-08 14:26:41,377 (ActivitySequencer.java:496) send (003) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:26:42,260 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:26:42,451 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:26:46,008 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:26:46,207 (ActivitySequencer.java:546) rcvd (002) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:26:46,417 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:26:46,609 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:26:46,803 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:26:52,258 (ActivitySequencer.java:546) rcvd (002) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:26:59,736 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:26:59,829 (EditorListener.java:236) Viewport changed: 1+73
+DEBUG 2016-01-08 14:26:59,830 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:26:59,975 (EditorListener.java:236) Viewport changed: 33+59
+DEBUG 2016-01-08 14:26:59,980 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:27:00,027 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:27:00,103 (EditorListener.java:236) Viewport changed: 95+59
+DEBUG 2016-01-08 14:27:00,247 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:27:00,275 (EditorListener.java:236) Viewport changed: 123+59
+DEBUG 2016-01-08 14:27:00,291 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:27:00,423 (EditorListener.java:236) Viewport changed: 282+60
+DEBUG 2016-01-08 14:27:00,480 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:27:00,529 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:27:01,468 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:27:01,674 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:27:01,865 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:27:02,264 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:27:02,459 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:27:02,627 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:27:03,695 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:27:03,890 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:27:04,090 (ActivitySequencer.java:496) send (002) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:27:04,291 (ActivitySequencer.java:496) send (002) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:27:04,312 (EditorListener.java:236) Viewport changed: 299+60
+DEBUG 2016-01-08 14:27:04,510 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:27:05,047 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:27:05,243 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:27:05,681 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:27:05,880 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:27:09,646 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:27:09,838 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:27:10,034 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:27:10,231 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:27:12,260 (ActivitySequencer.java:546) rcvd (002) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:27:13,272 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:27:13,276 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:27:13,481 (ActivitySequencer.java:546) rcvd (019) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:27:13,792 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:27:13,985 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:27:15,408 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:27:22,270 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:27:22,460 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:27:32,271 (ActivitySequencer.java:546) rcvd (002) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:27:42,269 (ActivitySequencer.java:546) rcvd (002) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:27:52,264 (ActivitySequencer.java:546) rcvd (002) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:28:02,302 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:28:02,491 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:28:12,338 (ActivitySequencer.java:546) rcvd (002) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:28:22,301 (ActivitySequencer.java:546) rcvd (002) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:28:24,571 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:28:32,378 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:28:32,395 (ActivitySequencer.java:546) rcvd (002) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:28:32,595 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:28:33,951 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:28:34,188 (ActivitySequencer.java:496) send (002) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:28:34,552 (ActivitySequencer.java:496) send (002) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:28:34,796 (ActivitySequencer.java:496) send (002) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:28:35,059 (ActivitySequencer.java:496) send (002) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:28:35,298 (ActivitySequencer.java:496) send (002) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:28:35,585 (ActivitySequencer.java:496) send (003) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:28:35,892 (ActivitySequencer.java:496) send (003) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:28:36,244 (ActivitySequencer.java:496) send (002) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:28:38,288 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:28:38,598 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:28:38,879 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:28:39,106 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:28:39,356 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:28:39,642 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:28:39,893 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:28:41,159 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:28:41,374 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:28:41,587 (ActivitySequencer.java:496) send (002) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:28:42,297 (ActivitySequencer.java:546) rcvd (002) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:28:51,815 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:28:52,344 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:28:52,575 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:28:56,639 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:28:56,845 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:28:57,058 (ActivitySequencer.java:496) send (002) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:02,396 (ActivitySequencer.java:546) rcvd (002) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:02,731 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:03,745 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:03,977 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:05,911 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:06,177 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:06,714 (ActivitySequencer.java:496) send (002) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:07,031 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:07,299 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:07,583 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:07,875 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:08,179 (ActivitySequencer.java:496) send (002) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:11,951 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:12,157 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:12,431 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:12,636 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:22,508 (ActivitySequencer.java:546) rcvd (002) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:31,591 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:31,851 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:32,256 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:32,427 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:32,503 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:32,719 (ActivitySequencer.java:546) rcvd (004) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:33,027 (ActivitySequencer.java:546) rcvd (003) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:33,508 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:33,729 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:33,958 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:34,165 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:34,390 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:34,603 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:34,840 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:35,100 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:35,379 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:35,652 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:36,224 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:36,448 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:36,480 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:36,696 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:36,780 (ActivitySequencer.java:496) send (002) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:36,969 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:37,289 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:37,626 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:37,931 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:38,174 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:38,414 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:39,294 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:39,510 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:40,078 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:40,328 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:42,485 (ActivitySequencer.java:546) rcvd (002) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:42,749 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:42,880 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:42,976 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:43,158 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:43,544 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:43,769 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:44,048 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:44,300 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:44,355 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:44,521 (ActivitySequencer.java:496) send (002) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:44,587 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:45,278 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:45,430 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:45,545 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:45,776 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:46,576 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:46,625 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:46,822 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:46,865 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:47,536 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:47,772 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:48,144 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:48,354 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:48,701 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:48,926 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:49,352 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:49,588 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:49,968 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:50,017 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:50,266 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:50,327 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:50,888 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:51,109 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:51,216 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:51,438 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:52,463 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:52,707 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:54,197 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:54,467 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:55,192 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:55,443 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:55,816 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:56,049 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:58,186 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:29:59,718 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:00,264 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:00,496 (ActivitySequencer.java:496) send (002) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:02,411 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:02,449 (ActivitySequencer.java:546) rcvd (002) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:04,821 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:05,113 (ActivitySequencer.java:546) rcvd (003) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:06,108 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:06,353 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:06,973 (EditorListener.java:236) Viewport changed: 299+59
+DEBUG 2016-01-08 14:30:06,974 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:07,093 (EditorListener.java:236) Viewport changed: 296+60
+DEBUG 2016-01-08 14:30:07,178 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:07,209 (EditorListener.java:236) Viewport changed: 290+59
+DEBUG 2016-01-08 14:30:07,330 (EditorListener.java:236) Viewport changed: 284+60
+DEBUG 2016-01-08 14:30:07,426 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:07,440 (EditorListener.java:236) Viewport changed: 283+59
+DEBUG 2016-01-08 14:30:07,560 (EditorListener.java:236) Viewport changed: 281+59
+DEBUG 2016-01-08 14:30:07,651 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:07,893 (EditorListener.java:236) Viewport changed: 280+60
+DEBUG 2016-01-08 14:30:07,893 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:08,017 (EditorListener.java:236) Viewport changed: 279+60
+DEBUG 2016-01-08 14:30:08,136 (EditorListener.java:236) Viewport changed: 269+59
+DEBUG 2016-01-08 14:30:08,202 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:08,251 (EditorListener.java:236) Viewport changed: 264+60
+DEBUG 2016-01-08 14:30:08,368 (EditorListener.java:236) Viewport changed: 263+59
+DEBUG 2016-01-08 14:30:08,437 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:10,248 (EditorListener.java:236) Viewport changed: 262+59
+DEBUG 2016-01-08 14:30:10,248 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:10,366 (EditorListener.java:236) Viewport changed: 260+60
+DEBUG 2016-01-08 14:30:10,467 (EditorListener.java:236) Viewport changed: 259+60
+DEBUG 2016-01-08 14:30:10,469 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:10,587 (EditorListener.java:236) Viewport changed: 259+59
+DEBUG 2016-01-08 14:30:10,752 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:12,001 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:12,462 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:12,681 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:13,540 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:13,938 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:14,147 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:14,315 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:14,556 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:14,795 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:22,467 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:22,717 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:26,233 (EditorListener.java:236) Viewport changed: 259+60
+DEBUG 2016-01-08 14:30:26,233 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:26,387 (EditorListener.java:236) Viewport changed: 260+60
+DEBUG 2016-01-08 14:30:26,475 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:26,503 (EditorListener.java:236) Viewport changed: 261+59
+DEBUG 2016-01-08 14:30:26,739 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:27,516 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:28,140 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:28,353 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:28,507 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:28,572 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:28,784 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:29,000 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:29,488 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:29,929 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:30,143 (ActivitySequencer.java:496) send (002) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:30,354 (ActivitySequencer.java:496) send (002) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:31,403 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:31,631 (ActivitySequencer.java:496) send (003) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:31,855 (ActivitySequencer.java:496) send (002) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:32,050 (ActivitySequencer.java:496) send (002) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:32,276 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:32,499 (ActivitySequencer.java:546) rcvd (002) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:32,553 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:33,498 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:33,727 (ActivitySequencer.java:496) send (004) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:34,639 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:34,854 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:36,426 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:36,663 (ActivitySequencer.java:496) send (002) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:37,076 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:37,334 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:38,264 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:38,513 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:39,248 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:39,922 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:40,138 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:40,872 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:41,107 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:41,281 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:42,100 (EditorListener.java:236) Viewport changed: 262+60
+DEBUG 2016-01-08 14:30:42,101 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:42,225 (EditorListener.java:236) Viewport changed: 267+59
+DEBUG 2016-01-08 14:30:42,348 (EditorListener.java:236) Viewport changed: 292+59
+DEBUG 2016-01-08 14:30:42,443 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:42,449 (EditorListener.java:236) Viewport changed: 292+60
+DEBUG 2016-01-08 14:30:42,475 (ActivitySequencer.java:546) rcvd (002) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:42,552 (EditorListener.java:236) Viewport changed: 294+59
+DEBUG 2016-01-08 14:30:42,668 (EditorListener.java:236) Viewport changed: 303+59
+DEBUG 2016-01-08 14:30:42,720 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:42,774 (EditorListener.java:236) Viewport changed: 305+59
+DEBUG 2016-01-08 14:30:42,886 (EditorListener.java:236) Viewport changed: 305+60
+DEBUG 2016-01-08 14:30:43,006 (EditorListener.java:236) Viewport changed: 306+59
+DEBUG 2016-01-08 14:30:43,120 (EditorListener.java:236) Viewport changed: 306+60
+DEBUG 2016-01-08 14:30:44,673 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:45,012 (EditorListener.java:236) Viewport changed: 306+59
+DEBUG 2016-01-08 14:30:45,012 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:45,143 (EditorListener.java:236) Viewport changed: 302+59
+DEBUG 2016-01-08 14:30:45,248 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:45,258 (EditorListener.java:236) Viewport changed: 276+59
+DEBUG 2016-01-08 14:30:45,397 (EditorListener.java:236) Viewport changed: 270+60
+DEBUG 2016-01-08 14:30:45,462 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:45,517 (EditorListener.java:236) Viewport changed: 205+60
+DEBUG 2016-01-08 14:30:45,630 (EditorListener.java:236) Viewport changed: 195+59
+DEBUG 2016-01-08 14:30:45,735 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:45,747 (EditorListener.java:236) Viewport changed: 189+59
+DEBUG 2016-01-08 14:30:45,882 (EditorListener.java:236) Viewport changed: 185+60
+DEBUG 2016-01-08 14:30:45,950 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:46,009 (EditorListener.java:236) Viewport changed: 185+59
+DEBUG 2016-01-08 14:30:46,149 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:46,202 (EditorListener.java:236) Viewport changed: 185+60
+DEBUG 2016-01-08 14:30:46,340 (EditorListener.java:236) Viewport changed: 187+59
+DEBUG 2016-01-08 14:30:46,409 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:46,452 (EditorListener.java:236) Viewport changed: 192+59
+DEBUG 2016-01-08 14:30:46,552 (EditorListener.java:236) Viewport changed: 194+59
+DEBUG 2016-01-08 14:30:46,649 (EditorListener.java:236) Viewport changed: 204+60
+DEBUG 2016-01-08 14:30:46,715 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:46,751 (EditorListener.java:236) Viewport changed: 210+60
+DEBUG 2016-01-08 14:30:46,870 (EditorListener.java:236) Viewport changed: 214+59
+DEBUG 2016-01-08 14:30:46,986 (EditorListener.java:236) Viewport changed: 216+59
+DEBUG 2016-01-08 14:30:47,085 (EditorListener.java:236) Viewport changed: 217+59
+DEBUG 2016-01-08 14:30:47,184 (EditorListener.java:236) Viewport changed: 218+59
+DEBUG 2016-01-08 14:30:47,196 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:47,287 (EditorListener.java:236) Viewport changed: 217+59
+DEBUG 2016-01-08 14:30:47,403 (EditorListener.java:236) Viewport changed: 214+59
+DEBUG 2016-01-08 14:30:47,432 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:47,522 (EditorListener.java:236) Viewport changed: 210+60
+DEBUG 2016-01-08 14:30:47,635 (EditorListener.java:236) Viewport changed: 200+59
+DEBUG 2016-01-08 14:30:47,663 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:47,754 (EditorListener.java:236) Viewport changed: 199+59
+DEBUG 2016-01-08 14:30:47,880 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:47,887 (EditorListener.java:236) Viewport changed: 200+59
+DEBUG 2016-01-08 14:30:48,019 (EditorListener.java:236) Viewport changed: 201+59
+DEBUG 2016-01-08 14:30:48,118 (EditorListener.java:236) Viewport changed: 231+59
+DEBUG 2016-01-08 14:30:48,135 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:48,226 (EditorListener.java:236) Viewport changed: 233+59
+DEBUG 2016-01-08 14:30:48,403 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:50,082 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:50,969 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:51,188 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:51,971 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:52,213 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:52,317 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:52,499 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:52,788 (ActivitySequencer.java:546) rcvd (003) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:53,058 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:53,305 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:30:53,559 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:31:02,522 (ActivitySequencer.java:546) rcvd (002) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:31:07,319 (ActivitySequencer.java:546) rcvd (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:31:07,536 (ActivitySequencer.java:546) rcvd (002) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:31:32,236 (ActivitySequencer.java:496) send (001) pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:31:51,068 (DiscoveryManager.java:98) clearing cache entry of contact pierreleidbring@saros-con.imp.fu-berlin.de/Saros: <query xmlns="http://jabber.org/protocol/disco#info"><identity category="client" name="Smack" type="pc"/><feature var="http://jabber.org/protocol/disco#items"/><feature var="http://jabber.org/protocol/bytestreams"/><feature var="http://jabber.org/protocol/ibb"/><feature var="http://jabber.org/protocol/si"/><feature var="http://jabber.org/protocol/xhtml-im"/><feature var="http://jabber.org/protocol/chatstates"/><feature var="http://jabber.org/protocol/si/profile/file-transfer"/><feature var="urn:xmpp:ping"/><feature var="jabber:iq:last"/><feature var="http://jabber.org/protocol/commands"/><feature var="http://jabber.org/protocol/muc"/><feature var="de.fu_berlin.inf.dpp"/><feature var="http://jabber.org/protocol/disco#info"/></query>
+ERROR 2016-01-08 14:31:51,069 (XMPPConnectionService.java:101) XMPP connection error: 
+java.net.SocketException: Operation timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:503)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:973)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:930)
+	at sun.security.ssl.AppInputStream.read(AppInputStream.java:105)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.io.BufferedReader.read1(BufferedReader.java:212)
+	at java.io.BufferedReader.read(BufferedReader.java:286)
+	at org.xmlpull.mxp1.MXParser.fillBuf(MXParser.java:2992)
+	at org.xmlpull.mxp1.MXParser.more(MXParser.java:3046)
+	at org.xmlpull.mxp1.MXParser.nextImpl(MXParser.java:1144)
+	at org.xmlpull.mxp1.MXParser.next(MXParser.java:1093)
+	at org.jivesoftware.smack.PacketReader.parsePackets(PacketReader.java:312)
+	at org.jivesoftware.smack.PacketReader.access$000(PacketReader.java:48)
+	at org.jivesoftware.smack.PacketReader$1.run(PacketReader.java:76)
+ERROR 2016-01-08 14:31:51,070 (XMPPConnectionService.java:400)  new connection state == ERROR
+java.net.SocketException: Operation timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:503)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:973)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:930)
+	at sun.security.ssl.AppInputStream.read(AppInputStream.java:105)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.io.BufferedReader.read1(BufferedReader.java:212)
+	at java.io.BufferedReader.read(BufferedReader.java:286)
+	at org.xmlpull.mxp1.MXParser.fillBuf(MXParser.java:2992)
+	at org.xmlpull.mxp1.MXParser.more(MXParser.java:3046)
+	at org.xmlpull.mxp1.MXParser.nextImpl(MXParser.java:1144)
+	at org.xmlpull.mxp1.MXParser.next(MXParser.java:1093)
+	at org.jivesoftware.smack.PacketReader.parsePackets(PacketReader.java:312)
+	at org.jivesoftware.smack.PacketReader.access$000(PacketReader.java:48)
+	at org.jivesoftware.smack.PacketReader$1.run(PacketReader.java:76)
+ERROR 2016-01-08 14:32:02,242 (ThreadUtils.java:40) Internal Error:
+java.lang.IllegalStateException: Not connected to server.
+	at org.jivesoftware.smack.XMPPConnection.sendPacket(XMPPConnection.java:483)
+	at org.jivesoftware.smack.util.SyncPacketSend.getReply(SyncPacketSend.java:42)
+	at org.jivesoftware.smack.util.SyncPacketSend.getReply(SyncPacketSend.java:62)
+	at org.jivesoftware.smackx.bytestreams.ibb.InBandBytestreamSession$IQIBBOutputStream.writeToXML(InBandBytestreamSession.java:763)
+	at org.jivesoftware.smackx.bytestreams.ibb.InBandBytestreamSession$IBBOutputStream.flushBuffer(InBandBytestreamSession.java:707)
+	at org.jivesoftware.smackx.bytestreams.ibb.InBandBytestreamSession$IBBOutputStream.closeInternal(InBandBytestreamSession.java:737)
+	at org.jivesoftware.smackx.bytestreams.ibb.InBandBytestreamSession.closeByLocal(InBandBytestreamSession.java:199)
+	at org.jivesoftware.smackx.bytestreams.ibb.InBandBytestreamSession.close(InBandBytestreamSession.java:154)
+	at org.jivesoftware.smackx.bytestreams.ibb.InBandBytestreamSession$IQIBBOutputStream.writeToXML(InBandBytestreamSession.java:768)
+	at org.jivesoftware.smackx.bytestreams.ibb.InBandBytestreamSession$IBBOutputStream.flushBuffer(InBandBytestreamSession.java:707)
+	at org.jivesoftware.smackx.bytestreams.ibb.InBandBytestreamSession$IBBOutputStream.flush(InBandBytestreamSession.java:691)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:141)
+	at java.io.DataOutputStream.flush(DataOutputStream.java:123)
+	at de.fu_berlin.inf.dpp.net.internal.BinaryChannelConnection.sendTransferDescription(BinaryChannelConnection.java:544)
+	at de.fu_berlin.inf.dpp.net.internal.BinaryChannelConnection.send(BinaryChannelConnection.java:322)
+	at de.fu_berlin.inf.dpp.net.internal.DataTransferManager.sendInternal(DataTransferManager.java:268)
+	at de.fu_berlin.inf.dpp.net.internal.DataTransferManager.sendData(DataTransferManager.java:216)
+	at de.fu_berlin.inf.dpp.net.internal.XMPPTransmitter.send(XMPPTransmitter.java:90)
+	at de.fu_berlin.inf.dpp.project.internal.ActivitySequencer.sendActivities(ActivitySequencer.java:501)
+	at de.fu_berlin.inf.dpp.project.internal.ActivitySequencer.access$3(ActivitySequencer.java:482)
+	at de.fu_berlin.inf.dpp.project.internal.ActivitySequencer$2.run(ActivitySequencer.java:152)
+	at de.fu_berlin.inf.dpp.util.ThreadUtils$1.run(ThreadUtils.java:38)
+	at java.lang.Thread.run(Thread.java:745)
+ERROR 2016-01-08 14:32:02,244 (ThreadUtils.java:41) Original caller:
+StackTrace:
+	at de.fu_berlin.inf.dpp.util.ThreadUtils.wrapSafe(ThreadUtils.java:32)
+	at de.fu_berlin.inf.dpp.util.ThreadUtils.runSafeAsync(ThreadUtils.java:64)
+	at de.fu_berlin.inf.dpp.project.internal.ActivitySequencer.start(ActivitySequencer.java:260)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.picocontainer.lifecycle.StartableLifecycleStrategy.doLifecycleMethod(StartableLifecycleStrategy.java:101)
+	at org.picocontainer.lifecycle.StartableLifecycleStrategy.startComponent(StartableLifecycleStrategy.java:96)
+	at org.picocontainer.lifecycle.StartableLifecycleStrategy.start(StartableLifecycleStrategy.java:87)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.start(AbstractInjectionFactory.java:84)
+	at org.picocontainer.behaviors.AbstractBehavior.start(AbstractBehavior.java:169)
+	at org.picocontainer.behaviors.Stored$RealComponentLifecycle.start(Stored.java:132)
+	at org.picocontainer.behaviors.Stored.start(Stored.java:110)
+	at org.picocontainer.DefaultPicoContainer.potentiallyStartAdapter(DefaultPicoContainer.java:1004)
+	at org.picocontainer.DefaultPicoContainer.startAdapters(DefaultPicoContainer.java:997)
+	at org.picocontainer.DefaultPicoContainer.start(DefaultPicoContainer.java:755)
+	at de.fu_berlin.inf.dpp.project.internal.SarosSession.start(SarosSession.java:604)
+	at de.fu_berlin.inf.dpp.negotiation.IncomingSessionNegotiation.startSession(IncomingSessionNegotiation.java:315)
+	at de.fu_berlin.inf.dpp.negotiation.IncomingSessionNegotiation.accept(IncomingSessionNegotiation.java:169)
+	at de.fu_berlin.inf.dpp.ui.wizards.JoinSessionWizard$2.run(JoinSessionWizard.java:128)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+ERROR 2016-01-08 14:32:02,242 (BinaryChannelConnection.java:176) failed to gracefully close connection [mode=IBB, id=saros-main-session] pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+java.lang.IllegalStateException: Not connected to server.
+	at org.jivesoftware.smack.XMPPConnection.sendPacket(XMPPConnection.java:483)
+	at org.jivesoftware.smack.util.SyncPacketSend.getReply(SyncPacketSend.java:42)
+	at org.jivesoftware.smack.util.SyncPacketSend.getReply(SyncPacketSend.java:62)
+	at org.jivesoftware.smackx.bytestreams.ibb.InBandBytestreamSession.closeByLocal(InBandBytestreamSession.java:210)
+	at org.jivesoftware.smackx.bytestreams.ibb.InBandBytestreamSession.close(InBandBytestreamSession.java:153)
+	at de.fu_berlin.inf.dpp.net.internal.XMPPByteStreamAdapter.close(XMPPByteStreamAdapter.java:32)
+	at de.fu_berlin.inf.dpp.net.internal.BinaryChannelConnection.close(BinaryChannelConnection.java:174)
+	at de.fu_berlin.inf.dpp.net.internal.ConnectionPool.close(ConnectionPool.java:50)
+	at de.fu_berlin.inf.dpp.net.internal.DataTransferManager.disposeConnection(DataTransferManager.java:510)
+	at de.fu_berlin.inf.dpp.net.internal.DataTransferManager.connectionStateChanged(DataTransferManager.java:520)
+	at de.fu_berlin.inf.dpp.net.xmpp.XMPPConnectionService.setConnectionState(XMPPConnectionService.java:405)
+	at de.fu_berlin.inf.dpp.net.xmpp.XMPPConnectionService.access$1(XMPPConnectionService.java:384)
+	at de.fu_berlin.inf.dpp.net.xmpp.XMPPConnectionService$1.connectionClosedOnError(XMPPConnectionService.java:102)
+	at org.jivesoftware.smack.XMPPConnection.notifyConnectionError(XMPPConnection.java:1057)
+	at org.jivesoftware.smack.PacketReader.parsePackets(PacketReader.java:321)
+	at org.jivesoftware.smack.PacketReader.access$000(PacketReader.java:48)
+	at org.jivesoftware.smack.PacketReader$1.run(PacketReader.java:76)
+DEBUG 2016-01-08 14:32:02,713 (BinaryChannelConnection.java:112) [mode=IBB, id=saros-main-session] pierreleidbring@saros-con.imp.fu-berlin.de/Saros connection closed remotely:null
+DEBUG 2016-01-08 14:32:02,714 (ConnectionPool.java:52) closed connection [id=saros-main-session:out:pierreleidbring@saros-con.imp.fu-berlin.de/Saros]: [mode=IBB, id=saros-main-session] pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+ERROR 2016-01-08 14:32:02,714 (BinaryChannelConnection.java:176) failed to gracefully close connection [mode=IBB, id=default] pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+java.lang.IllegalStateException: Not connected to server.
+	at org.jivesoftware.smack.XMPPConnection.sendPacket(XMPPConnection.java:483)
+	at org.jivesoftware.smack.util.SyncPacketSend.getReply(SyncPacketSend.java:42)
+	at org.jivesoftware.smack.util.SyncPacketSend.getReply(SyncPacketSend.java:62)
+	at org.jivesoftware.smackx.bytestreams.ibb.InBandBytestreamSession.closeByLocal(InBandBytestreamSession.java:210)
+	at org.jivesoftware.smackx.bytestreams.ibb.InBandBytestreamSession.close(InBandBytestreamSession.java:154)
+	at de.fu_berlin.inf.dpp.net.internal.XMPPByteStreamAdapter.close(XMPPByteStreamAdapter.java:32)
+	at de.fu_berlin.inf.dpp.net.internal.BinaryChannelConnection.close(BinaryChannelConnection.java:174)
+	at de.fu_berlin.inf.dpp.net.internal.ConnectionPool.close(ConnectionPool.java:50)
+	at de.fu_berlin.inf.dpp.net.internal.DataTransferManager.disposeConnection(DataTransferManager.java:510)
+	at de.fu_berlin.inf.dpp.net.internal.DataTransferManager.connectionStateChanged(DataTransferManager.java:520)
+	at de.fu_berlin.inf.dpp.net.xmpp.XMPPConnectionService.setConnectionState(XMPPConnectionService.java:405)
+	at de.fu_berlin.inf.dpp.net.xmpp.XMPPConnectionService.access$1(XMPPConnectionService.java:384)
+	at de.fu_berlin.inf.dpp.net.xmpp.XMPPConnectionService$1.connectionClosedOnError(XMPPConnectionService.java:102)
+	at org.jivesoftware.smack.XMPPConnection.notifyConnectionError(XMPPConnection.java:1057)
+	at org.jivesoftware.smack.PacketReader.parsePackets(PacketReader.java:321)
+	at org.jivesoftware.smack.PacketReader.access$000(PacketReader.java:48)
+	at org.jivesoftware.smack.PacketReader$1.run(PacketReader.java:76)
+DEBUG 2016-01-08 14:32:03,405 (BinaryChannelConnection.java:112) [mode=IBB, id=default] pierreleidbring@saros-con.imp.fu-berlin.de/Saros connection closed remotely:null
+DEBUG 2016-01-08 14:32:03,405 (ConnectionPool.java:52) closed connection [id=default:in:pierreleidbring@saros-con.imp.fu-berlin.de/Saros]: [mode=IBB, id=default] pierreleidbring@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2016-01-08 14:32:03,408 (XMPPConnectionService.java:398)  new connection state == NOT_CONNECTED
+DEBUG 2016-01-08 14:32:59,090 (DirtyStateListener.java:75) Dirty state reset for: L/LED-Display/src/p6/IkarusScroll.java
+DEBUG 2016-01-08 14:33:10,941 (DirtyStateListener.java:75) Dirty state reset for: L/LED-Display/src/p6/IkarusScroll.java
+DEBUG 2016-01-08 14:35:00,655 (DirtyStateListener.java:75) Dirty state reset for: L/LED-Display/src/p6/IkarusScroll.java
+DEBUG 2016-01-08 14:35:24,983 (EditorListener.java:236) Viewport changed: 233+43
+DEBUG 2016-01-08 14:35:30,046 (EditorListener.java:236) Viewport changed: 318+44
+ERROR 2016-01-08 14:35:46,985 (ClientSessionTimeoutHandler.java:82) no ping received, reached timeout = 300000
+DEBUG 2016-01-08 14:35:46,987 (SarosSessionManager.java:330) terminating all running negotiation processes
+DEBUG 2016-01-08 14:35:46,988 (SarosSessionManager.java:337) Leave message sent.
+DEBUG 2016-01-08 14:35:46,989 (ActivityHandler.java:109) activity dispatcher stopped
+INFO  2016-01-08 14:35:46,989 (FeedbackManager.java:104) Session lasted 14 min 19 s
+DEBUG 2016-01-08 14:35:46,991 (FollowModeCollector.java:177) Processing follow mode changes took 0.0 s
+DEBUG 2016-01-08 14:35:46,992 (TextEditCollector.java:381) Processing text edits took 0.0 s
+INFO  2016-01-08 14:35:46,993 (ParticipantCollector.java:145) Session ended: Current number of participants: 2
+DEBUG 2016-01-08 14:35:46,995 (StatisticManager.java:329) Session statistic:
+  auto.followmode.enabled=false
+  data_transfer.IBB.average_throughput_kbs=0.6
+  data_transfer.IBB.number_of_events=339
+  data_transfer.IBB.total_size_kb=75
+  data_transfer.IBB.total_time_ms=118273
+  feedback.disabled=false
+  feedback.survey.interval=5
+  followmode.time.percent=0
+  followmode.time.total=0.0
+  followmode.toggles=0
+  gesture.count=0
+  java.version=1.8.0_66
+  jumped.count=1
+  jumped.driver.count=1
+  jumped.observer.count=0
+  observer.selection.count.witnessed=0
+  observer.selection.count=0
+  os.name=Mac OS X
+  platform.version=3.11.1.v20150903-1804
+  random.user.id=2016-01-08_14-35-46_1717954225
+  role.1.duration=14.33
+  role.1=write_access
+  role.changes=0
+  role.driver.duration=14.33
+  role.driver.percent=100
+  role.observer.duration=0.0
+  role.observer.percent=0
+  saros.version=14.10.31
+  session.count=2
+  session.id=1220143581
+  session.local.start=2016-01-08T13:35:46Z
+  session.shared.project.complete.count=1
+  session.shared.project.partial.count=0
+  session.shared.project.partial.files.count=0
+  session.time.users.2.percent=100
+  session.time.users.2=14.33
+  session.time=14.33
+  session.users.total=2
+  textedits.chars=833
+  textedits.count=165
+  textedits.nonparallel.chars=375
+  textedits.nonparallel.percent=45
+  textedits.parallel.interval.10.chars=458
+  textedits.parallel.interval.10.count=1
+  textedits.parallel.interval.10.percent=55
+  textedits.pastes.chars=614
+  textedits.pastes=4
+  textedits.remote.user.1.chars=39
+  textedits.remote.user.1.pastes.chars=0
+  textedits.remote.user.1.pastes=0
+  user.is.host=false
+INFO  2016-01-08 14:35:46,997 (StatisticManager.java:243) User does not allow to submit session statistics
+DEBUG 2016-01-08 14:35:47,182 (EditorManager.java:1697) unlocking all editors
+WARN  2016-01-08 14:35:47,185 (SarosSession.java:655) failed to notify user pierreleidbring@saros-con.imp.fu-berlin.de/Saros about local session stop
+java.io.IOException: not connected to a XMPP server
+	at de.fu_berlin.inf.dpp.net.internal.DataTransferManager.sendData(DataTransferManager.java:200)
+	at de.fu_berlin.inf.dpp.net.internal.XMPPTransmitter.send(XMPPTransmitter.java:90)
+	at de.fu_berlin.inf.dpp.project.internal.SarosSession.stop(SarosSession.java:651)
+	at de.fu_berlin.inf.dpp.project.SarosSessionManager.stopSarosSession(SarosSessionManager.java:340)
+	at de.fu_berlin.inf.dpp.project.internal.timeout.SessionTimeoutHandler$3.run(SessionTimeoutHandler.java:115)
+	at de.fu_berlin.inf.dpp.util.ThreadUtils$1.run(ThreadUtils.java:38)
+	at java.lang.Thread.run(Thread.java:745)
+DEBUG 2016-01-08 14:35:47,186 (XStreamExtensionProvider.java:169) Unregistering (resetting) converter of class de.fu_berlin.inf.dpp.misc.xstream.SPathConverter
+DEBUG 2016-01-08 14:35:47,186 (XStreamExtensionProvider.java:216) Unregistering (resetting) converter of class de.fu_berlin.inf.dpp.misc.xstream.UserConverter
+DEBUG 2016-01-08 14:35:47,189 (SharedProjectDecorator.java:93) clearing project decoration for all shared projects
+DEBUG 2016-01-08 14:35:47,190 (DocumentRecord.java:93) Added Node: attr(14522601471904431) name=svg
+DEBUG 2016-01-08 14:35:47,459 (MultiUserChatService.java:135) leaving multi user chat de.fu_berlin.inf.dpp.communication.chat.muc.MultiUserChat@7bea2643
+WARN  2016-01-08 14:35:47,460 (MultiUserChat.java:223) could not leave or destroy room: SAROS_1220143581@conference.saros-con.imp.fu-berlin.de
+java.lang.IllegalStateException: Not connected to server.
+	at org.jivesoftware.smack.XMPPConnection.sendPacket(XMPPConnection.java:483)
+	at org.jivesoftware.smackx.muc.MultiUserChat.leave(MultiUserChat.java:548)
+	at de.fu_berlin.inf.dpp.communication.chat.muc.MultiUserChat.disconnect(MultiUserChat.java:221)
+	at de.fu_berlin.inf.dpp.communication.chat.muc.MultiUserChatService.destroyChat(MultiUserChatService.java:139)
+	at de.fu_berlin.inf.dpp.ui.widgets.chat.ChatRoomsComposite$5$3.run(ChatRoomsComposite.java:277)
+	at de.fu_berlin.inf.dpp.util.ThreadUtils$1.run(ThreadUtils.java:38)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4024)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3700)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:827)
+	at org.eclipse.jface.window.Window.open(Window.java:803)
+	at org.eclipse.jface.dialogs.MessageDialog.open(MessageDialog.java:330)
+	at de.fu_berlin.inf.dpp.feedback.FeedbackManager$3.call(FeedbackManager.java:260)
+	at de.fu_berlin.inf.dpp.feedback.FeedbackManager$3.call(FeedbackManager.java:1)
+	at de.fu_berlin.inf.dpp.ui.util.SWTUtils$1.run(SWTUtils.java:161)
+	at de.fu_berlin.inf.dpp.util.ThreadUtils$1.run(ThreadUtils.java:38)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:186)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:145)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4781)
+	at de.fu_berlin.inf.dpp.ui.util.SWTUtils.runSafeSWTSync(SWTUtils.java:188)
+	at de.fu_berlin.inf.dpp.ui.util.SWTUtils.runSWTSync(SWTUtils.java:157)
+	at de.fu_berlin.inf.dpp.feedback.FeedbackManager.showFeedbackDialog(FeedbackManager.java:254)
+	at de.fu_berlin.inf.dpp.feedback.FeedbackManager$2.run(FeedbackManager.java:134)
+	at de.fu_berlin.inf.dpp.util.ThreadUtils$1.run(ThreadUtils.java:38)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4024)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3700)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+INFO  2016-01-08 14:35:47,462 (SarosSessionManager.java:351) session stopped
+INFO  2016-01-08 14:35:58,596 (FeedbackManager.java:139) Asking for feedback survey: User declined
+DEBUG 2016-01-08 14:36:14,775 (UPnPServiceImpl.java:295) deleting existing port mappings

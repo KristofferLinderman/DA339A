@@ -1,0 +1,355 @@
+package p6;
+
+import java.awt.BorderLayout;
+import java.awt.Dimension;
+import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.HashMap;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+
+import java.util.Timer;
+import java.util.TimerTask;
+
+/**
+ * A GUI for testing {@link Array7x7} and the moveLeft/moveRight method.
+ * 
+ * @author Kristoffer Linderman and Pierre Lejdbring
+ *
+ */
+@SuppressWarnings("serial")
+public class IkarusScroll extends JPanel {
+
+	private JPanel btnPanel;
+	private JButton setSpeed, setText, stopBtn;
+	private ColorDisplay colorDisplay;
+	private Array7x7 a7x7, nextA7x7;
+	private HashMap<String, int[][]> charHash;
+	private String input;
+	private Array7x7[] array7x7Buffer;
+
+	private int background, foreground;
+	private int scrollSpeed;
+	private Timer timer;
+
+	private final Dimension buttonSize = new Dimension(100, 50);
+	private final Dimension screenSize = new Dimension(400, 400);
+
+	/**
+	 * Constructor that creates a JPanel consisting of inner panels.
+	 * 
+	 */
+	public IkarusScroll() {
+		setLayout(new BorderLayout());
+		setPreferredSize(screenSize);
+
+		background = Color.BLACK;
+		foreground = Color.WHITE;
+
+		input = new String("H");
+		charHash = new HashMap<>();
+		timer = new Timer();
+		scrollSpeed = 200;
+
+		initaiatePanels();
+		addButtons();
+		addCharsToHash();
+
+		colorDisplay.setDisplay(convertBinary(LedCharacters.HASHTAG.getCharacter()));
+
+		add(colorDisplay, BorderLayout.CENTER);
+		add(btnPanel, BorderLayout.SOUTH);
+	}
+
+	/**
+	 * Initiates all of the panels.
+	 */
+	private void initaiatePanels() {
+		colorDisplay = new ColorDisplay(Color.BLACK, Color.RED);
+		btnPanel = new JPanel(new FlowLayout());
+	}
+
+	/**
+	 * Adds two buttons and set their size and assigns listeners.
+	 */
+	private void addButtons() {
+		ButtonListener listener = new ButtonListener();
+
+		setSpeed = new JButton("Set Speed");
+		setText = new JButton("Set Text");
+		stopBtn = new JButton("Stop");
+
+		setSpeed.setPreferredSize(buttonSize);
+		setText.setPreferredSize(buttonSize);
+		stopBtn.setPreferredSize(buttonSize);
+
+		setSpeed.addActionListener(listener);
+		setText.addActionListener(listener);
+		stopBtn.addActionListener(listener);
+
+		btnPanel.add(setSpeed);
+		btnPanel.add(setText);
+		btnPanel.add(stopBtn);
+	}
+
+	/**
+	 * Adds all of the characters in LedCharacters to the HashMap charHash
+	 */
+	private void addCharsToHash() {
+		for (LedCharacters character : LedCharacters.values()) {
+			charHash.put(character.name(), character.getCharacter());
+		}
+	}
+
+	private String interpret(String x) {
+
+		switch (x) {
+		case " ":
+			x = "SPACE";
+			break;
+		case "+":
+			x = "PLUS";
+			break;
+		case "-":
+			x = "MINUS";
+			break;
+		case "*":
+			x = "ASTERISK";
+			break;
+		case "!":
+			x = "EXCLAMATION";
+			break;
+		case "?":
+			x = "QUESTIONMARK";
+			break;
+		case ",":
+			x = "COMMA";
+		case ".":
+			x = "DOT";
+			break;
+		case "=":
+			x = "EQUALS";
+			break;
+		case "#":
+			x = "HASHTAG";
+			break;
+		case "1":
+			x = "ONE";
+			break;
+		case "2":
+			x = "TWO";
+			break;
+		case "3":
+			x = "THREE";
+			break;
+		case "4":
+			x = "FOUR";
+			break;
+		case "5":
+			x = "FIVE";
+			break;
+		case "6":
+			x = "SIX";
+			break;
+		case "7":
+			x = "SEVEN";
+			break;
+		case "8":
+			x = "EIGHT";
+			break;
+		case "9":
+			x = "NINE";
+			break;
+		case "0":
+			x = "ZERO";
+			break;
+		default:
+			break;
+		}
+
+		return x;
+	}
+
+	/**
+	 * Reads the characters in the input into an array with buffered Arra7x7
+	 * objects.
+	 */
+	private void readFromInput() {
+		array7x7Buffer = new Array7x7[input.length()];
+
+		String temp = String.valueOf(input.charAt(0));
+		temp = interpret(temp);
+
+		array7x7Buffer[0] = new Array7x7(convertBinary(charHash.get(temp)));
+
+		if (input.length() > 1) {
+
+			for (int i = 1; i < array7x7Buffer.length; i++) {
+				temp = String.valueOf(input.charAt(i));
+
+				temp = interpret(temp);
+
+				array7x7Buffer[i] = new Array7x7(convertBinary(charHash.get(temp)));
+			}
+
+			nextA7x7 = array7x7Buffer[1];
+		} else {
+			nextA7x7 = array7x7Buffer[0];
+		}
+		temp = String.valueOf(input.charAt(0));
+		temp = interpret(temp);
+
+		a7x7 = new Array7x7(convertBinary(charHash.get(String.valueOf(temp))));
+	}
+
+	/**
+	 * Converts a matrix of 0,1 to a matrix with colors.
+	 * 
+	 * @param color
+	 *            the matrix to convert into color values
+	 * @return the matrix with color elements
+	 */
+	private int[][] convertBinary(int[][] color) {
+		int[][] res = new int[7][7];
+
+		for (int i = 0; i < 7; i++) {
+			for (int j = 0; j < 7; j++) {
+				if (color[i][j] == 0) {
+					res[i][j] = background;
+				} else {
+					res[i][j] = foreground;
+				}
+			}
+		}
+		return res;
+	}
+
+	/**
+	 * Set the color of the background
+	 * 
+	 * @param color
+	 *            of the background
+	 */
+	public void setBackgroundColor(int color) {
+		background = color;
+	}
+
+	/**
+	 * Set the color of the foreground
+	 * 
+	 * @param color
+	 *            of the foreground
+	 */
+	public void setForegroundColor(int color) {
+		foreground = color;
+	}
+
+	/**
+	 * Set the speed the LED display will scroll.
+	 * 
+	 * @param speed
+	 *            - Fast, Normal, Slow
+	 */
+	public void setScrollSpeed(int speed) {
+		scrollSpeed = speed;
+	}
+
+	/**
+	 * A class that extends ActionListeners scrolls text based on input
+	 * 
+	 * @author Kristoffer Linderman and Pierre Lejdbring
+	 *
+	 */
+	private class ButtonListener implements ActionListener {
+
+		/**
+		 * Scrolls the text from left to right showing inputed text
+		 */
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			if (e.getSource() == setText) {
+				
+				// \\w represents [a-zA-Z0-9_] \\Q and \\E is quote, which is
+				// mechanism to escape metacharacters, even in character class.
+				String inputFormat = " \\w\\Q!#()*+,-./<=>?[\\]\\E+{1,50}";
+
+				timer.cancel();
+				colorDisplay.setDisplay(LedCharacters.SPACE.getCharacter());
+				colorDisplay.updateDisplay();
+				input = JOptionPane.showInputDialog("Enter message to display").toUpperCase();
+
+				if (!(input.matches(inputFormat))) {
+					JOptionPane.showMessageDialog(null, "Characters not supported", "Input error",
+							JOptionPane.ERROR_MESSAGE);
+					return;
+				}
+
+				readFromInput();
+				timer = new Timer();
+				timer.schedule(new ToDo(), 0, scrollSpeed);
+
+			} else if (e.getSource() == setSpeed) {
+				int temp = Integer
+						.parseInt(JOptionPane.showInputDialog("Enter scroll speed \n \t 1: Fast, 2: Normal, 3: Slow"));
+
+				scrollSpeed = temp * 100;
+
+			} else if (e.getSource() == stopBtn) {
+				timer.cancel();
+				colorDisplay.setDisplay(LedCharacters.SPACE.getCharacter());
+				colorDisplay.updateDisplay();
+			}
+		}
+	}
+
+	/**
+	 * A TimerTask that scrolls thru the array7x7Buffer.
+	 * 
+	 * @author Kristoffer and Pierre Lejdbring
+	 *
+	 */
+	private class ToDo extends TimerTask {
+		private int columnIndex = 0;
+		// Start on two to eliminate repetition of first two char.
+		private int stringIndex = 2;
+
+		public void run() {
+
+			if (input.length() < 2) {
+				stringIndex = 0;
+			}
+
+			Array7 a7 = nextA7x7.getCol(columnIndex);
+			a7x7.moveLeft(a7);
+			colorDisplay.setDisplay(a7x7.getMatrix());
+			colorDisplay.updateDisplay();
+
+			if (columnIndex == 6) {
+				if (stringIndex == input.length()) {
+					stringIndex = 0;
+				}
+
+				columnIndex = 0;
+				nextA7x7 = array7x7Buffer[stringIndex];
+
+				stringIndex++;
+			}
+
+			columnIndex++;
+		}
+	}
+
+	public static void main(String[] args) {
+
+		JFrame frame = new JFrame();
+		IkarusScroll pusher = new IkarusScroll();
+		frame.add(pusher);
+		frame.setVisible(true);
+		frame.setResizable(false);
+		frame.pack();
+	}
+}

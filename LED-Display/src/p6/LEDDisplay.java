@@ -5,10 +5,13 @@ import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.HashMap;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+
+import org.omg.CORBA.CharHolder;
 
 /**
  * A GUI for testing {@link Array7x7} and the moveLeft/moveRight method.
@@ -23,6 +26,7 @@ public class LEDDisplay extends JPanel {
 	private ColorDisplay colorDisplay;
 	private int background, foreground;
 	private Array7x7 a7x7;
+	private HashMap<String, int[][]> charHash;
 	private final Dimension buttonSize = new Dimension(100, 50);
 	private final Dimension screenSize = new Dimension(800, 600);
 
@@ -37,12 +41,22 @@ public class LEDDisplay extends JPanel {
 		background = Color.BLACK;
 		foreground = Color.RED;
 
-		a7x7 = new Array7x7(convertBinary(LedCharacters.A.getCharacter()));
+		a7x7 = new Array7x7(convertBinary(LedCharacters.B.getCharacter()));
 
+		charHash = new HashMap<>(5);
 
 		initaiatePanels();
 		addButtons();
+		addCharsToHash();
 
+		int [][] temp = charHash.get("B");
+		for(int i = 0; i < 7; i++){
+			for(int j = 0; j<7; j++){
+				System.out.print(temp[i][j]);
+			}
+			System.out.println("");
+		}
+		
 		colorDisplay.setDisplay(a7x7.getMatrix());
 
 		add(colorDisplay, BorderLayout.CENTER);
@@ -77,8 +91,19 @@ public class LEDDisplay extends JPanel {
 	}
 
 	/**
+	 * Adds all of the characters in LedCharacters to the HashMap charHash
+	 */
+	private void addCharsToHash() {
+		for (LedCharacters character : LedCharacters.values()) {
+			charHash.put(character.name(), character.getCharacter());
+		}
+	}
+
+	/**
 	 * Converts a matrix of 0,1 to a matrix with colors.
-	 * @param color the matrix to convert into color values
+	 * 
+	 * @param color
+	 *            the matrix to convert into color values
 	 * @return the matrix with color elements
 	 */
 	private int[][] convertBinary(int[][] color) {
@@ -98,7 +123,9 @@ public class LEDDisplay extends JPanel {
 
 	/**
 	 * Set the color of the background
-	 * @param color of the background
+	 * 
+	 * @param color
+	 *            of the background
 	 */
 	public void setBackgroundColor(int color) {
 		background = color;
@@ -106,7 +133,9 @@ public class LEDDisplay extends JPanel {
 
 	/**
 	 * Set the color of the foreground
-	 * @param color of the foreground
+	 * 
+	 * @param color
+	 *            of the foreground
 	 */
 	public void setForegroundColor(int color) {
 		foreground = color;

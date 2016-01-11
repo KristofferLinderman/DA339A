@@ -1,0 +1,30 @@
+package p6;
+
+public Test(){
+
+	public Population[] getTenToTwelveMillions(Population[] array) {
+		int counter = 0, index = 0;
+		
+		for(Population population : countries) {
+			long inhabitants = population.getPopulation();
+			if( (inhabitants < 10000000) && (inhabitants > 12000000) ) {
+				counter++;
+			}
+		}
+		Population[] newPopulationArray = new Population[counter];
+		
+		for(Population population : newPopulationArray) {
+			newPopulationArray[index] = population;
+			index++;
+		}
+		return newPopulationArray;
+	}
+// test getTenToTwelveMillions
+		 res = getTenToTwelveMillions( countries );
+		
+		 for( int i = 0; i < res.length; i++ ) {
+		 System.out.println( res[ i ].toString() );
+		 }
+}
+}
+}

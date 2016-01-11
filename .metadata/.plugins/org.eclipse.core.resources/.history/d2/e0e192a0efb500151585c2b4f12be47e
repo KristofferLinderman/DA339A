@@ -1,0 +1,15 @@
+package p6;
+
+public class Singleton {
+
+	private static Singleton single = new Singleton();
+	
+	private Singleton() {
+		
+	}
+	
+	private static Singleton getInstace() {
+		return single;
+	}
+	
+}

@@ -26,8 +26,7 @@ public class Exercise18c {
 	public Population[] getTenToTwelveMillions(Population[] array) {
 		counter = 0;
 		for (Population country : array) {
-			if (country.getPopulation() <= 12000000
-					&& country.getPopulation() >= 10000000) {
+			if (country.getPopulation() <= 12000000 && country.getPopulation() >= 10000000) {
 				counter++;
 			}
 		}
@@ -35,8 +34,7 @@ public class Exercise18c {
 		int index = 0;
 
 		for (Population country : array) {
-			if (country.getPopulation() <= 12000000
-					&& country.getPopulation() >= 10000000) {
+			if (country.getPopulation() <= 12000000 && country.getPopulation() >= 10000000) {
 				bigCountries[index] = country;
 				index++;
 			}
@@ -65,8 +63,7 @@ public class Exercise18c {
 	}
 
 	public void program() {
-		Population[] countries = Populations
-				.readPopulations("files/befolkning.txt");
+		Population[] countries = Populations.readPopulations("files/befolkning.txt");
 		Population[] res;
 		// Aktivera testerna en i taget, men först när du kompletterat //
 		// metoderna med kod.
